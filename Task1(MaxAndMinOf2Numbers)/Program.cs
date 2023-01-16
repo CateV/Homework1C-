@@ -15,8 +15,11 @@ if (number1 > number2)
 }
 else
 {
-    int max = number2;
-    int min = number1;
+    max = number2;
+    min = number1;
 }
 System.Console.WriteLine($"Большим из 2-х введённых Вами чисел является число {max}");
 System.Console.WriteLine($"Меньшим - число {min}");
+
+/*Владимир, подскажите, пожалуйста, 
+в правильном ли месте я впервые объявила min и max, всё ли с ними в порядке? Спасибо */
