@@ -14,8 +14,3 @@ while (numberToWrite < n + 1)
     }
     numberToWrite++;
 }
-
-if (number % 2 == 0)
-{
-    System.Console.WriteLine($"{number}");
-}
