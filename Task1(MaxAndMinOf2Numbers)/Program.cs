@@ -8,6 +8,7 @@ Console.WriteLine("Введите второе число");
 int number2 = Convert.ToInt32(Console.ReadLine());
 int max = 0;
 int min = 0;
+
 if (number1 == number2)
 {
     System.Console.WriteLine("Введённые Вами числа равны, невозможно выделить максимальное и минимальное");
@@ -27,7 +28,33 @@ else
     System.Console.WriteLine($"Большим из 2-х введённых Вами чисел является число {max}");
     System.Console.WriteLine($"Меньшим - число {min}");
 }
-
+/*можно было и так: 
+Console.WriteLine("Введите первое число");
+int number1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите второе число");
+int number2 = Convert.ToInt32(Console.ReadLine());
+if (number1 == number2)
+{
+    System.Console.WriteLine("Введённые Вами числа равны, невозможно выделить максимальное и минимальное");
+}
+else
+{
+    int max = 0;
+    int min = 0;
+    if (number1 > number2)
+    {
+        max = number1;
+        min = number2;
+    }
+    else
+    {
+        max = number2;
+        min = number1;
+    }
+    System.Console.WriteLine($"Большим из 2-х введённых Вами чисел является число {max}");
+    System.Console.WriteLine($"Меньшим - число {min}");
+}
+*/
 /*Владимир, подскажите, пожалуйста:
 1)в правильном ли месте я впервые объявила min и max, всё ли с ними в порядке?  
 2)можно ли, объявляя max и min, присваивать им на старте значение 0, 
@@ -36,5 +63,8 @@ else
 4) можно ли было в 9-10 строчке просто объявить max и min и не присваивать им вообще
 никакого начального значения в данном случае (int max; int min;)?
 
- Спасибо за ответы
+ОТВЕТЫ: (1) Вы сделали правильно, лучший способ проверить - это запустить программу. 
+(2) - можно. (3) - Можно присвоить им значения из переменных. 
+(4) - Можно их просто объявить и ничего не присваивать.
+ 
 */
