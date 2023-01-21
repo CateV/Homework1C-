@@ -15,7 +15,7 @@ while (numberToWrite < n + 1)
         System.Console.WriteLine(numberToWrite);
     }
     numberToWrite++;
-} */
+} 
 
 /*А это решение с учётом ввода отрицательных чисел или 0 пользователем: 
 
